@@ -43,10 +43,10 @@ data "terraform_remote_state" "foo" {
 
 ## Configuration variables
 
-The following configuration options are supported:
+The following configuration options / environment variables are supported:
 
- * `address` - (Required) The address of the REST endpoint
- * `update_method` - (Optional) HTTP method to use when updating state.
+ * `address` / `BACKEND_ADDRESS` - (Required) The address of the REST endpoint
+ * `update_method` / `BACKEND_UPDATE_METHOD` - (Optional) HTTP method to use when updating state.
    Defaults to `POST`.
  * `lock_address` - (Optional) The address of the lock REST endpoint.
    Defaults to disabled.
